@@ -1,9 +1,9 @@
-import express from "express"
+import express from "express";
 
-import * as authController from "../controller/authController.js"
+import * as authController from "../controller/authController.js";
 
-const api = express.Router()
+const api = express.Router();
 
-api.post('/register', authController.register)
+api.post("/register", authController.register);
 
-export default api
+export default api;

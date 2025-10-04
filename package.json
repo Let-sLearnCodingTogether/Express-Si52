@@ -1,21 +1,24 @@
 {
-  "name": "latihan-express",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon app.js"
-  },
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "mongoose": "^8.19.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+	"name": "latihan-express",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon app.js",
+		"format": "npx @biomejs/biome check --write",
+		"lint": "npx @biomejs/biome lint --write"
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^3.1.10",
+		"express": "^5.1.0",
+		"mongoose": "^8.19.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5",
+		"nodemon": "^3.1.10"
+	}
 }
