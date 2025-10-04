@@ -1,6 +1,6 @@
 export const register = (_req, res) => {
 	try {
-		res.status(200).json({
+		res.status(201).json({
 			message: "Berhasil register, silahkan login",
 			data: null,
 		});
