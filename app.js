@@ -1,4 +1,5 @@
 import express from "express";
+import { database } from "./config/database.js";
 import api from "./routes/api.js";
 import web from "./routes/web.js";
 
@@ -14,5 +15,6 @@ app.use(web);
 app.use("/api", api);
 
 app.listen(3000, () => {
+	database();
 	console.log(`Aplikasi berjalan di http://localhost:3000`);
 });
