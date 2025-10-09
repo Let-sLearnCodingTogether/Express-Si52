@@ -5,7 +5,7 @@ export const register = async (req, res) => {
 	try {
 		const request = req.body;
 
-		const hashPassword = hash(req.password);
+		const hashPassword = hash(request.password);
 
 		await UserModel.create({
 			username: request.username,
@@ -40,7 +40,7 @@ export const login = async (req, res) => {
 			});
 		}
 
-		if (user.password === request.password) {
+		if (request.password === user.password) {
 			return res.status(200).json({
 				message: "Login berhasil",
 				data: {
